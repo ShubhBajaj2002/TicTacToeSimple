@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-void Take_Intput();
+void Take_Input();
 int Valid_Input();
 bool Check_Winner();
 void Print_Board();
@@ -9,7 +9,7 @@ void Reset_Board();
 
 char board[9];
 
-void Take_Intput(string &name, int &pos_left){
+void Take_Input(string &name, int &pos_left){
 
 	// Function to proceed the game forward //
 
@@ -122,7 +122,7 @@ int main(){
  	while(true){
 
  		// For every odd turn, positions left will be odd //
- 		(pos_left % 2 != 0) ? Take_Intput( X, pos_left) : Take_Intput( O, pos_left);
+ 		(pos_left % 2 != 0) ? Take_Input( X, pos_left) : Take_Input( O, pos_left);
 
  		// If the game ends, we can exit the loop //
  		if(Check_Winner()){
